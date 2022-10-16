@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { DisplayLoginPage, DisplayRegisterPage, ProcessLoginPage, ProcessLougoutPage, ProcessRegisterPage } from "../controllers/auth.controller.server.js";
+import { DisplayLoginPage, DisplayRegisterPage, ProcessLoginPage, ProcessLogoutPage, ProcessRegisterPage } from "../controllers/auth.controller.server.js";
 
 const router = Router();
 
@@ -10,7 +10,7 @@ router.post('/login',ProcessLoginPage);
 router.get('/register',DisplayRegisterPage);
 router.post('/register',ProcessRegisterPage);
 
-router.get('/logout', ProcessLougoutPage);
+router.get('/logout', ProcessLogoutPage);
 
 
 

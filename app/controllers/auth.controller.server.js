@@ -26,26 +26,28 @@ export function DisplayRegisterPage(req, res, next){
 
 //Process functions
 export function ProcessLoginPage(req,res,next){
-    passport.authenticate('local',function(err, user, info){
+    passport.authenticate('local', function(err, user, info){
         if(err){
             console.error(err);
-            res.end(err);
+            res.emd(err);
         }
         if(!user){
-            req.flash('loginMessage','Authetication Error');
+            req.flash('loginMessage','Authentication error');
             return res.redirect('/login');
         }
 
-        req.lolIn(user, function(err){
+        req.logIn(user,function(err){
             if(err){
                 console.error(err);
                 res.end(err);
             }
+
             return res.redirect('/')
         });
 
-    })(req,res,next);
+    })(req,res, next);
 }
+    
 
 
 export function ProcessRegisterPage(req,res,next){
@@ -74,7 +76,7 @@ export function ProcessRegisterPage(req,res,next){
     })
 }
 
-export function ProcessLougoutPage(req, res, next){
+export function ProcessLogoutPage(req, res, next){
     req.logOut(function(err){
         if(err){
             console.error(err);

@@ -77,7 +77,7 @@ passport.use(User.createStrategy());
 
 //Auth Step8 - Setup serialization and deserialization
 passport.serializeUser(User.serializeUser());
-passport.deserializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
 
  
 // Use Routes
