@@ -1,3 +1,25 @@
-<div class="container">
-    <h1><%= title %></h1>
+<h1><%= title %></h1>
+<div class="contact_Container">
+  <form>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="First name" />
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Last name" />
+
+    <label for="email">Email adress</label>
+    <input type="text" id="email" name="email" placeholder="Email adress" />
+
+    <label for="pnumber">Phone number</label>
+    <input type="text" id="pnumber" name="pnumber" placeholder="Phone number" />
+
+    <label for="message">Message</label>
+    <textarea
+      id="message"
+      name="message"
+      placeholder="Please input here"
+      style="height: 200px"
+    ></textarea>
+  </form>
+  <button onclick="redirectToHome();">Submit</button>
 </div>
