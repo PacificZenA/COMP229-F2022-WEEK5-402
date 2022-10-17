@@ -45,7 +45,7 @@ export function ProcessLoginPage(req,res,next){
             }
 
             return res.redirect('/contact-list')
-        });
+        })
 
     })(req,res, next);
 }
