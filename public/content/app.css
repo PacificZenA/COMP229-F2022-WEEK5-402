@@ -1,0 +1,54 @@
+/* File name: app.css 
+Student Name: Alex Tang
+StudentID: 301238850
+Date: Oct/5/2022
+*/
+
+div {
+    padding-left: 50px;
+  }
+  
+  /*Making container's content align horizontal and euqal*/
+  #container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 370px);
+    gap: 15px;
+  }
+  /* adjust image size and add shadow */
+  #container img {
+    height: 200px;
+    width: 320px;
+    box-shadow: 5px 5px lightblue;
+  }
+  
+  #container div {
+    padding-left: 50px;
+  }
+  .text {
+    padding-top: 10px;
+  }
+  
+  /* Text area in contact form */
+  input[type="text"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Contact form */
+  .contact_Container {
+    margin: auto;
+    width: 680px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  /* Control the link width */
+  #ulLink{
+    width: 200px;
+  }
