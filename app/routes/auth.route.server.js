@@ -11,8 +11,10 @@ const router = Router();
 router.get('/login',DisplayLoginPage);
 router.post('/login',ProcessLoginPage);
 
-router.get('/register',DisplayRegisterPage);
-router.post('/register',ProcessRegisterPage);
+
+//Turn off register page
+// router.get('/register',DisplayRegisterPage);
+// router.post('/register',ProcessRegisterPage);
 
 router.get('/logout', ProcessLogoutPage);
 
